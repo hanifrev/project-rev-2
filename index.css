@@ -1,0 +1,16 @@
+.formkiri {
+		grid-area: kiri;
+	}
+.formkanan {
+		grid-area: kanan;
+	}
+#table1 {
+		font-size: 20px;
+		margin: 10px;
+		display: grid;
+		grid-template-columns: 20% 1fr;
+		grid-template-rows: 1fr;
+		grid-template-areas: 
+			'kiri kanan'
+			;
+	}
