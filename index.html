@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>Survey Form</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body class="bodysleeper">
@@ -26,7 +27,7 @@
 		  	</div>
 		  	<div id="table1">
 		  		<div class="formkiri"><label>Which option best describes your current role?</label></div>
-		  		<div class="formkanan">s
+		  		<div class="formkanan">
 		  			<select id="dropdown" name="currentPos">
 		  				<option value="" disabled="">Select an option</option>
 		  				<option value="student">Student</option>
@@ -39,8 +40,53 @@
 		  	</div>
 		  	<div id="table1">
 		  		<div class="formkiri"><label>* How likely is that you would recommend freeCodeCamp to a friend?</label></div>
-		  		<div class="formkanan"></div>
+		  		<div class="formkanan">
+		  			<ul style="list-style: none;">
+			          <li class="radio"><label><input name="radio-buttons" value="1" type="radio" class="userRatings">Definitely</label></li>
+			          <li class="radio"><label><input name="radio-buttons" value="2" type="radio" class="userRatings">Maybe</label></li>
+			          <li class="radio"><label><input name="radio-buttons" value="3" type="radio" class="userRatings">Not sure</label></li>
+			        </ul>
+		  		</div>
 		  	</div>
+		  	<div id="table1">
+		  		<div class="formkiri"><label>What do you like most in FCC:</label></div>
+		  		<div class="formkanan">
+		  			<select id="dropdown" name="likemostfcc">
+		  				<option value="" selected="" disabled="">Select an option</option>
+		  				<option value="challenges">Challenges</option>
+						<option value="projects">Projects</option>
+						<option value="community">Community</option>
+						<option value="openSource">Open Source</option>
+		  			</select>
+		  		</div>
+		  	</div>
+		  	<div id="table1">
+		  		<div class="formkiri"><label>Things that should be improved in the future
+						(Check all that apply):</label></div>
+				<div class="formkanan">
+					<ul style="list-style: none;">
+						 <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label></li>
+				          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</li>
+				          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Community</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Gitter help rooms</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Videos</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">City Meetups</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Wiki</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Forum</label></li>
+				          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Additional Courses</label></li>
+					</ul>
+				</div>
+		  	</div>
+		  	<div id="table1">
+		  		<div class="formkiri"><label>Any Comments or Suggestions?</label></div>
+		  		<div class="formkanan">
+		  			 <textarea id="comments" class="input-field" style="height:50px;" name="comment" placeholder="Enter your comment here..."></textarea>
+		  		</div>
+		  	</div><button id="submit" type="submit">Submit</button>
+		  	</div>
+		  	
 		</form>
 	</div>
 </body>

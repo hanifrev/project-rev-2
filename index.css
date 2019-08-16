@@ -1,16 +1,103 @@
+h1 {
+	text-align: center;
+}
+#description {
+	text-align: center;
+}
+body {
+	background-color: #00FFFF;
+	font-family: ;
+	text-align: center;
+
+}
+.bodysleeper {
+	font-size: 19px;
+
+}
+
+#survey-form {
+	/*display: grid;
+	grid-template-columns: 20% 60% 20%;
+	grid-template-rows: 1fr;
+	margin: 5px 150px 0px 150px;*/
+	padding: 15px 0px 0px 0px;
+	background-color: 	#F0FFFF;
+	/*background-color: rgb(250, 250, 250);*/
+  	margin: 0 auto;
+  	border-radius: 4px;
+  	width: 75%;
+  	height: max-content;
+  	max-width: 900px;
+  	padding: 10px;
+  	padding-top: 20px;
+  	
+}
 .formkiri {
 		grid-area: kiri;
+		text-align: right;
+		display: inline-block;
+		width: 40%;
+  		padding: 5px;
+  		vertical-align: top;
+  		margin-top: 0px;
+		
 	}
 .formkanan {
 		grid-area: kanan;
+		text-align: left;
+		display: inline-block;
+		width: 48%;
+  		vertical-align: middle;
 	}
+#name, #mail, #age {
+	width: 70%;
+}
+/*
+.hongat {
+		grid-area: hon;
+}
+.hongat 2 {
+		grid-area: hon2;
+}*/
 #table1 {
-		font-size: 20px;
-		margin: 10px;
-		display: grid;
-		grid-template-columns: 20% 1fr;
+		font-size: 17px;
+		
+		margin: 10px 5px 10px 5px;
+		/*padding: 0px 0px 0px 500px;*/
+		
+
+	/*	grid-gap: 10px;
+		grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
 		grid-template-rows: 1fr;
 		grid-template-areas: 
-			'kiri kanan'
-			;
+			'hon kiri kanan hon2'
+			;*/
 	}
+.radio .checkbox {
+	position: relative;
+	text-align: left;
+  	display: block;
+ 	
+
+}
+.input-field {
+	width: 100%;
+	display: inline-block;
+}
+
+
+@media screen and (max-width: 660px) {
+  	.formkiri {
+    	width: 100%;
+    	text-align: left;
+    	font-size: 70%;
+  	}
+  	.formkanan {
+    	width: 80%;
+    	float: left;
+    	font-size: 70%;
+  	}
+  	.input-field {
+  		width: 50%;
+  		position: relative;
+  	}
